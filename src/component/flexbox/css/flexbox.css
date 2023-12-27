@@ -2,6 +2,10 @@
 @import 'flex-order.css';
 @import 'flex-direction.css';
 @import 'flex-wrap.css';
+@import 'flex.css';
+@import 'justify-content.css';
+@import 'align-items.css';
+
 .wrapper {
   max-inline-size: 64rem;
   margin: auto;

@@ -1,9 +1,62 @@
-import React from "react"
+
 import './css/flexbox.css'
 export const Flexbox = () => {
 
     return (
         <>
+            <div className="wrapper">
+                <h2>
+                    Align items
+                </h2>
+                <div className="alignItems">
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+                </div>
+            </div>
+            <div className="wrapper">
+                <h2>
+                    Justify Content
+                </h2>
+                <div className="spaceBetween">
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+                    <ul>
+                        <li>
+                            <a href='#'>Cusos</a>
+                        </li>
+                        <li>
+                            <a href='#' >Proyectos</a>
+                        </li>
+                        <li>
+                            <a href='#'>Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section className="wrapper">
+                <h2>
+                    Justify Content
+                </h2>
+                <div className="justifyContent">
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+
+                </div>
+            </section>
+
+            <section className="wrapper">
+                <h2>
+                    Flex
+                </h2>
+                <div className="flex">
+                    <img src={'/public/grand-escape.jpg'} alt="grand-escape" />
+                    <div>
+                        <button>hola</button>
+                    </div>
+                </div>
+            </section>
             <section className="wrapper">
                 <h1>  Flex Wrap </h1>
                 <div className="flexWrap">
