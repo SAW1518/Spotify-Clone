@@ -1,0 +1,13 @@
+.buttonIcon {
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  background: transparent;
+}
+
+.buttonIcon.is-white {
+    background: var(--white);
+}
+
+.buttonIcon.is-primary {
+    background: var(--primary);
+}
