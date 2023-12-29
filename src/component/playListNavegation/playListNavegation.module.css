@@ -1,0 +1,23 @@
+.list {
+    padding-inline: 1rem;
+}
+.listTitle {
+    font: var(--baseFont);
+    margin-block-start: 0;
+    margin-block-end: .5rem;
+}
+
+.listConetent {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.listLink {
+    font: var(--baseFontBold);
+    transition: color .2s;
+}
