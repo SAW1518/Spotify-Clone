@@ -1,4 +1,5 @@
 export { Header } from './header/header';
 export { ButtonIcon } from './buttonIcon/buttonIcon';
-export { PlayListNavegation } from './playListNavegation/playListNavegation';
+export { PlayList } from './playList/playList';
 export { Link } from './link/link';
+export { Menu } from './memu/menu';

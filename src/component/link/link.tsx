@@ -1,11 +1,10 @@
+import React from 'react'
 import styles from './link.module.css'
 
 interface LinkProps {
-    href: string,
-    value: string
-    className?: string
+    children: React.ReactNode 
+    extraClass?: string
 }
-
-export const Link = ({ href, value, className }: LinkProps) => (
-    <a className={`${styles.link} ${className} `} href={href}>{value}</a>
+export const Link = (props: LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>)  => (
+    <a className={`${styles.link} ${props.extraClass} `} {...props}>{props.children}</a>
 )

@@ -1,4 +1,4 @@
-import { ButtonIcon, Header, PlayListNavegation } from "./component";
+import { ButtonIcon, Header, Menu, PlayList } from "@/component";
 
 
 const yourLibrary = [
@@ -31,8 +31,14 @@ export function App() {
   return (
     <>
       <Header />
-      <PlayListNavegation id='library-navigation' title="Tu Bibloteca" links={yourLibrary} />
-      <PlayListNavegation id='library-play-list' title="Playlists" links={yourPlayList} />
+      <nav aria-label="Principal">
+        <Menu icon="icon-home" iconActive='icon-homeActive' isActive text="Inicio" />
+        <Menu icon="icon-search" iconActive='icon-searchActive' text="Buscar" />
+        <Menu icon="icon-creditCard" iconActive='icon-creditCard' text="Premium" />
+      </nav >
+
+      <PlayList id='library-navigation' title="Tu Bibloteca" links={yourLibrary} />
+      <PlayList id='library-play-list' title="Playlists" links={yourPlayList} />
       <section>
         <ButtonIcon iconName="icon-play" area="Play" type="is-white" />
         <ButtonIcon iconName="icon-play" area="Play" type="is-primary" />

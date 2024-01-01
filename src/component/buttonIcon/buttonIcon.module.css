@@ -1,4 +1,4 @@
-.buttonIcon {
+.button-icon {
   inline-size: 2.5rem;
   block-size: 2.5rem;
   background: transparent;
@@ -7,26 +7,26 @@
   color: var(--gray10);
 }
 
-.buttonIcon.is-white {
+.button-icon.is-white {
   background: var(--white);
   color: var(--gray50);
 }
 
-.buttonIcon.is-primary {
+.button-icon.is-primary {
   background: var(--primary);
   color: var(--white);
 }
 
-.fixCenterIcon {
+.fix-center-icon {
   position: relative;
   inset-inline-start: 1px;
   inset-block-start: 1px;
 }
 
-.buttonIcon:active {
+.button-icon:active {
   transform: scale(.95);
 }
 
-.buttonIcon:hover {
+.button-icon:hover {
   box-shadow: 0 8px 8px rgba(0, 0, 0, .3) ;
 }

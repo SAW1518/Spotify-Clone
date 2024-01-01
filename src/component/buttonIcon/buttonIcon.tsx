@@ -7,12 +7,13 @@ interface ButtonIconProps {
 }
 
 export const ButtonIcon = ({ area, iconName, type }: ButtonIconProps) => {
+    const { buttonIcon, fixCenterIcon } = styles
 
-    const fixPlayIcon: string = iconName === 'icon-play' ? styles.fixCenterIcon : ''
+    const fixPlayIcon: string = iconName === 'icon-play' ? fixCenterIcon : ''
     const addType: string = type ? styles[type] : ''
 
     return (
-        <button className={`${styles.buttonIcon} ${addType}`} aria-label={area} title={area} >
+        <button className={`${buttonIcon} ${addType}`} aria-label={area} title={area} >
             <i className={`${iconName} ${fixPlayIcon}`} aria-hidden ></i>
         </button>
     )
