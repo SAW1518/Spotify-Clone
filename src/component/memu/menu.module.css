@@ -5,13 +5,10 @@
     list-style: none;   
 }
 
-.menu-item {
-    
-}
 
 .menu-item a {
     display: flex;
-    font: var(--button);
+    font: var(--baseFont);
     padding-inline-start: 1.5rem;
     padding-inline-end: 1.5rem;
     

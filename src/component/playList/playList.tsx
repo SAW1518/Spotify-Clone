@@ -14,7 +14,7 @@ interface PlayListNavegationProps {
 
 export const PlayList = ({ id, title, links }: PlayListNavegationProps) => {
 
-    const { list, listTitle, listConetent, listLink } = styles
+    const { list, listTitle, listConetent, listLink, ellipsis } = styles
 
     return (
         <nav className={list} aria-labelledby={id}>
@@ -22,7 +22,9 @@ export const PlayList = ({ id, title, links }: PlayListNavegationProps) => {
             <ul className={listConetent} >
                 {links.map((item) => (
                     <li key={item.value}>
-                        <Link extraClass={listLink}> {item.value} </Link>
+                        <span className={ellipsis} >
+                            <Link extraClass={listLink}> {item.value} </Link>
+                        </span>
                     </li>
                 ))}
             </ul>
