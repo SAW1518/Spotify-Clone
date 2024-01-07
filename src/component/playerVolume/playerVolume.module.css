@@ -1,0 +1,19 @@
+
+.player-volume {
+    display: flex;
+    align-items: center;
+}
+
+.player-volume-slider {
+    flex: 1;
+    max-inline-size: 6rem;
+}
+
+.player-control {
+    border: 0;
+    padding: .5rem;
+    background: none;
+    color: var(--gray10);
+    font-size: 1.5rem;
+    cursor: pointer;
+}

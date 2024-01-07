@@ -3,4 +3,7 @@ export { ButtonIcon } from './buttonIcon/buttonIcon';
 export { PlayList } from './playList/playList';
 export { Link } from './link/link';
 export { Menu } from './memu/menu';
-export { Sidebar } from './sidebar/sidebar'
+export { Sidebar } from './sidebar/sidebar';
+export { Slider } from './slider/slider';
+export { PlayerControls } from './playerControls/playerControls';
+export { PlayerVolume } from './playerVolume/playerVolume';

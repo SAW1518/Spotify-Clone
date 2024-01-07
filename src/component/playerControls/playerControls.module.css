@@ -1,0 +1,28 @@
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.player-controls-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.player-playback {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.player-playback-progress-time {
+    font: var(--small);
+    line-height: 1;
+    position: relative;
+    top:1px
+}
+
+.player-playback-slider {
+    flex: 1;
+}

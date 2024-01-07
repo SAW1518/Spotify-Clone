@@ -1,0 +1,35 @@
+.slider {
+    background: rgba(255, 255, 255, .2);
+    block-size: .25rem;
+    border-radius: .5rem;
+}
+
+.slider:hover .sider-progress {
+    background: var(--primary);
+}
+
+.slider:hover .sider-button {
+    display: block;
+}
+
+.sider-progress {
+    block-size: inherit;
+    border-radius: inherit;
+    background: var(--white);
+    inline-size: 20%;
+    position: relative;
+}
+
+.sider-button {
+    position: absolute;
+    background: var(--white);
+    padding: 0;
+    border: 0;
+    block-size: 200%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
