@@ -1,0 +1,22 @@
+.now-play {
+    border: 1px solid red;
+    display: flex;
+    gap:.5rem;
+}
+
+.now-play-details {
+    display: flex;
+    gap:1.5rem;
+}
+
+.now-play-title {
+    color: var(--white);
+    font: var(--baseFont);
+    text-decoration: none;
+}
+
+.now-play-artist {
+    font: vat(--small);
+    color: var(--gray10);
+    text-decoration: none;
+}
