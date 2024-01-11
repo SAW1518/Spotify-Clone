@@ -6,7 +6,7 @@
 
 .player-volume-slider {
     flex: 1;
-    max-inline-size: 6rem;
+    inline-size: 6rem;
 }
 
 .player-control {

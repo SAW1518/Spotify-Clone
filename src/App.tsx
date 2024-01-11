@@ -1,16 +1,24 @@
-import { PlayerControls, Sidebar,PlayerVolume, NowPlaying } from "@/component";
-
+import { PlayerControls, Sidebar, PlayerVolume, NowPlaying, PlayListLarge } from "@/component";
+import styles from "./App.module.css";
 
 export function App() {
-
+  const { player, playerNowPlaying, playerPlayerControls, playerPlayerVolume } = styles
   return (
     <>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima totam asperiores voluptatum expedita pariatur quasi, quia laborum a, sit sint suscipit debitis natus modi dolorem perferendis eligendi odit officia tempore!</p>
-      <NowPlaying/>
-      <PlayerControls />
-      <PlayerVolume/>
+      <PlayListLarge />
       <Sidebar />
-      
+      {/* Player */}
+      <footer className={player} >
+        <div className={playerNowPlaying} >
+          <NowPlaying />
+        </div>
+        <div className={playerPlayerControls} >
+          <PlayerControls />
+        </div>
+        <div className={playerPlayerVolume}>
+          <PlayerVolume />
+        </div>
+      </footer>
     </>
   )
 }

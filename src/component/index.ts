@@ -8,3 +8,4 @@ export { Slider } from './slider/slider';
 export { PlayerControls } from './playerControls/playerControls';
 export { PlayerVolume } from './playerVolume/playerVolume';
 export { NowPlaying } from './nowPlay/nowPlay';
+export { PlayListLarge } from './playListLarge/playListLarge';

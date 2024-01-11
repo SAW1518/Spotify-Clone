@@ -1,0 +1,52 @@
+.play-list-large {
+    inline-size: 13em;
+    padding: 1rem;
+    border-radius: .25rem;
+    background: var(--gray40);
+    box-sizing: border-box;
+    transition: .2s background;
+}
+
+.play-list-large-cover  {
+    border-radius: .75rem;
+    position: relative;
+    overflow: hidden;
+    margin-block-end: 1rem;
+}
+
+.play-list-large:hover, .play-list-large:focus-within {
+    cursor: pointer;
+    background: var(--gray30);
+}
+
+.play-list-large-cover img {
+    vertical-align: middle;
+}
+
+.play-list-large-cover button {
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    opacity: 0;
+    transform: translateY(.5rem);
+    will-change: opacity, transform;
+    transition: .2s opacity, .2s transform;
+}
+
+.play-list-large:hover .play-list-large-cover button,
+.play-list-large:focus-within .play-list-large-cover button
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.play-list-large-title {
+    font: var(--baseFontBold);
+    color: var(--white);
+    margin: 0;
+}
+
+.play-list-large-decrition {
+    font: var(--baseFont);
+    margin: 0;
+}
