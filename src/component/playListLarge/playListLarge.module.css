@@ -21,6 +21,8 @@
 
 .play-list-large-cover img {
     vertical-align: middle;
+    inline-size:100%;
+    block-size: auto;
 }
 
 .play-list-large-cover button {

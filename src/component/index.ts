@@ -9,3 +9,6 @@ export { PlayerControls } from './playerControls/playerControls';
 export { PlayerVolume } from './playerVolume/playerVolume';
 export { NowPlaying } from './nowPlay/nowPlay';
 export { PlayListLarge } from './playListLarge/playListLarge';
+export { PlayListSmall } from './platListSmall/playListSmall';
+export { Icon } from './icon/icon';
+export { NavegationBar } from './navegationBar/navegationBar';

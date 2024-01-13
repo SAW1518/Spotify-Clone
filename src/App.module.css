@@ -1,3 +1,63 @@
+
+/* search */
+.search {
+    position: relative;
+    
+}
+
+.search i {
+    position: absolute;
+    font-size: 1rem;
+    left: .5rem;
+    block-size: 1rem;
+    top: calc(50% - .5rem);
+}
+.search:focus-within i {
+    color: var(--gray30);
+}
+
+.search input {
+
+    border-radius: 1.25rem;    
+    float: var(--baseFont);
+    color: var(--gray30);
+    border: none;
+    max-inline-size: 22rem;
+    width: 100%;
+    padding: .5rem;
+    padding-inline-start: 2rem;
+}
+.search input::-webkit-input-placeholder {
+    color: var(--gray10);
+}
+
+/* playListContainer */
+.play-list-container-top {
+    padding-top: .5rem;
+    margin-block-end: 1rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.play-list-container-title {
+    font: var(--headline2);
+    color: var(--white);
+    margin: 0;
+}
+
+.play-list-container-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap:1rem
+}
+
+.play-list-container-horizontal > * {
+    flex-shrink: 0;
+}
+
+/* Player */
 .player {
     display: flex;
     gap: 1.5rem;
@@ -17,4 +77,3 @@
     display: flex;
     justify-content: flex-end;
 }
-
